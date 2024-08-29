@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ugr-oS-zG6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="1" title="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hzg-Lf-rbR"/>
+                        <viewControllerLayoutGuide type="bottom" id="yu5-oQ-TOT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pg-o9-RKm">
+                                <rect key="frame" x="43" y="157" width="83" height="30"/>
+                                <state key="normal" title="Brush Teeth"/>
+                                <connections>
+                                    <segue destination="0gz-Ss-hKe" kind="show" id="bxk-dQ-CoN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot0-ZR-1Qd">
+                                <rect key="frame" x="43" y="119" width="96" height="30"/>
+                                <state key="normal" title="Parents Game"/>
+                                <connections>
+                                    <segue destination="kQh-cs-2JC" kind="show" id="ftk-Fr-l6n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-9z-xhl">
+                                <rect key="frame" x="43" y="332" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="9s4-bu-VPE" kind="show" id="l90-cE-5Xa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-pM-0tN">
+                                <rect key="frame" x="43" y="195" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Train Game"/>
+                                <connections>
+                                    <segue destination="wvF-fy-OEN" kind="show" id="ghc-zE-3eS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrk-FV-H0s" userLabel="Shape Game">
+                                <rect key="frame" x="43" y="227" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Shape Game"/>
+                                <connections>
+                                    <segue destination="3qw-dv-OOl" kind="show" id="VtA-8i-ExB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4pg-o9-RKm" firstAttribute="leading" secondItem="ot0-ZR-1Qd" secondAttribute="leading" id="8I4-3E-e45"/>
+                            <constraint firstItem="ot0-ZR-1Qd" firstAttribute="top" secondItem="Hzg-Lf-rbR" secondAttribute="bottom" constant="55" id="D6d-mL-px3"/>
+                            <constraint firstItem="4pg-o9-RKm" firstAttribute="top" secondItem="ot0-ZR-1Qd" secondAttribute="bottom" constant="8" symbolic="YES" id="JCi-Ey-WTL"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ot0-ZR-1Qd" secondAttribute="trailing" constant="20" symbolic="YES" id="U1a-Nr-okK"/>
+                            <constraint firstItem="ot0-ZR-1Qd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="dxS-uS-qQW"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4pg-o9-RKm" secondAttribute="trailing" constant="20" symbolic="YES" id="gpc-nh-UBp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="94t-z0-ies"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="38.23088455772114"/>
+        </scene>
+        <!--Brush Teeth View Controller-->
+        <scene sceneID="G74-kN-9TF">
+            <objects>
+                <viewController id="0gz-Ss-hKe" userLabel="Brush Teeth View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Grq-77-9Ae"/>
+                        <viewControllerLayoutGuide type="bottom" id="fmn-BZ-cYz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NEh-eH-hjX" userLabel="Teeth Brush GameView" customClass="TeethBrushGameVIew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoD-nJ-jR7" customClass="TeethBrushGameView">
+                                <rect key="frame" x="16" y="0.0" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="YoD-nJ-jR7" secondAttribute="trailing" id="7eY-je-2fy"/>
+                            <constraint firstItem="YoD-nJ-jR7" firstAttribute="top" secondItem="Grq-77-9Ae" secondAttribute="bottom" id="PFs-2d-fHf"/>
+                            <constraint firstItem="YoD-nJ-jR7" firstAttribute="leading" secondItem="NEh-eH-hjX" secondAttribute="leadingMargin" id="nn8-ha-Owa"/>
+                            <constraint firstItem="fmn-BZ-cYz" firstAttribute="top" secondItem="YoD-nJ-jR7" secondAttribute="bottom" id="uzm-cP-Zk1"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxa-ql-frT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520.8" y="-197.45127436281859"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="BdV-dx-QyQ">
+            <objects>
+                <viewController id="9s4-bu-VPE" userLabel="Settings View Controller" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jEW-0a-I1y"/>
+                        <viewControllerLayoutGuide type="bottom" id="dCb-5d-dQS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ijv-yw-2hB" customClass="SettingsView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="settingsView" destination="ijv-yw-2hB" id="iTU-L1-2bn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dE-bs-a2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-814" y="1047"/>
+        </scene>
+        <!--Train Game Controller-->
+        <scene sceneID="q68-fV-Upn">
+            <objects>
+                <viewController id="wvF-fy-OEN" userLabel="Train Game Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zOl-XZ-Rdj"/>
+                        <viewControllerLayoutGuide type="bottom" id="bVc-N3-DdC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DI8-Tj-TRN" customClass="TrainGameView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gT0-dH-W1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520.8" y="465.51724137931041"/>
+        </scene>
+        <!--Shape Game Controller-->
+        <scene sceneID="oed-9I-7Bx">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="pageSheet" id="3qw-dv-OOl" userLabel="Shape Game Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O9y-gT-rE3"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbR-pp-RKm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wom-Ak-G3t" userLabel="Shape Game View" customClass="ShapeGameView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Joy-Fy-U3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="1017"/>
+        </scene>
+        <!--Parents View Controller-->
+        <scene sceneID="BwR-SZ-vBq">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="pageSheet" id="kQh-cs-2JC" userLabel="Parents View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Twb-Gi-NNP"/>
+                        <viewControllerLayoutGuide type="bottom" id="GoM-Za-OQZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0gD-tO-1z9" customClass="ParentsGameView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Xg-zG-tGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181.5999999999999" y="-874.81259370314854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IDH-NJ-BDB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ugr-oS-zG6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XRO-sC-wUq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qht-wP-K7G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QjI-Xe-uhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-401" y="38"/>
+        </scene>
+    </scenes>
+</document>

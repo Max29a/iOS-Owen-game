@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  Owen
+//
+//  Created by Max Barry on 4/20/16.
+//  Copyright © 2016 Max Barry. All rights reserved.
+//
+
+#import "UIColor+Additions.h"
+#import "GlobalUtils.h"
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define IS_IPAD     (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE   (!IS_IPAD)
+
+#define FACE_WIDTH                          (IS_IPAD ? 200.0f : 100.0f)
+#define FACE_HEIGHT                         (IS_IPAD ? 200.0f : 100.0f)
+
+#define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+
+#endif /* PrefixHeader_pch */
